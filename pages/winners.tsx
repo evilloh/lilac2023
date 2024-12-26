@@ -6,12 +6,12 @@ const Winners = () => (
     <section className="min-h-screen bg-primary-black md:bg-transparent">
       <div className="videogif w-screen min-h-screen flex pt-60 md:pt-90 items-center">
         <div className="w-full md:w-2/3 px-4 md:px-32 2xl:ml-[20%] max-w-2xl ">
-          <h2 className="text-8xl">2024</h2>
+          <h2 className="text-8xl">2023</h2>
           <h2 className="text-8xl mb-4">WINNERS</h2>
           <h3 className="mb-4">
             THE GAME AWARDS IS PROUD TO RECOGNIZE THE FOLLOWING GAMES AND
             INDIVIDUALS FOR OUTSTANDING CREATIVE AND TECHNICAL ACHIEVEMENT IN
-            2024.
+            2023.
           </h3>
           <h3 className="mb-4 font-sans font-light">
             Watch the show here or browse through the categories with the button

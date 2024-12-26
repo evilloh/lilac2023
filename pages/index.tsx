@@ -8,7 +8,7 @@ import { isMobile } from "react-device-detect";
 const IndexPage = () => (
   <Layout title="">
     <Head>
-      <title>Lillawards 2024</title>
+      <title>Lillawards 2023</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <section className="h-screen flex pt-60 md:pt-90 items-center justify-center flex-wrap bg-gradient-to-b from-[#bf97b9] via-[#e1bee7] to-[#bf97b9] md:bg-transparent flex-col md:flex-row"> 
@@ -33,7 +33,7 @@ const IndexPage = () => (
           <div className="text-6xl md:text-8xl lg:text-9xl">
             THE
             <br /> LILAC
-            <br /> 2024
+            <br /> 2023
           </div>
         </div>
         <Button animatedButton="animated-button" to="/winners">
@@ -69,12 +69,12 @@ const IndexPage = () => (
             Celebrate the best
           </h2>
           <h2 className="uppercase text-5xl font-bold italic mb-8 tracking-widest">
-            video games <br></br> of 2024
+            video games <br></br> of 2023
           </h2>
           <p>
-            And see world premiere announcements of what's coming next in 2024
+            And see world premiere announcements of what's coming next in 2023
             and beyond! The Game Awards streams live and free around the world
-            on Thursday, December 1, 2024.
+            on Thursday, December 1, 2023.
           </p>
           <Button
             classImport="w-[250px]"
@@ -99,19 +99,19 @@ const IndexPage = () => (
         <div className="w-full flex justify-around flex-wrap ">
           <ArticleCard
             to="inktober"
-            date="November 7, 2024"
+            date="November 7, 2023"
             description="Inktober Review"
             image="/assets/inktober/inktober00.jpg"
           ></ArticleCard>
           <ArticleCard
             to="lillachat"
-            date="November 15, 2024"
+            date="November 15, 2023"
             description="Lillachat w/ Carlo"
             image="/assets/carlotalk.png"
           ></ArticleCard>
           <ArticleCard
             to="lillachoice"
-            date="November 20, 2024"
+            date="November 20, 2023"
             description="Lillachoices exposed!"
             image="/assets/choices.gif"
           ></ArticleCard>

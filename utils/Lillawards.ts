@@ -20,24 +20,17 @@ export const linkslist = [
 // to add a game add it to the list below and to getGameData to give it a proper image
 
 export const gamesList = [
-  'bg3',
-  'cocoon',
+  'gorogoa',
+  'hifi',
+  'hogwartslegacy',
+  'chainedechoes',
   'goldenidol',
-  'sliceanddice',
-  'talos',
-  'tunic',
-  'showgun',
-  'stray',
-  'ghost',
-  'dave',
-  'ratchet',
-  'tlou2',
-  'tothemoon',
-  'seaofstars',
-  'balatro',
-  'animalwell',
-  'beginnersguide',
-  'nier',
+  'blasphemous2',
+  'bramble',
+  'mariorabbids',
+  'neonwhite',
+  'tacticsogre',
+  'lostinrandom',
 ];
 
 export const categoryNomineeList = (gameSlug) => {
@@ -46,74 +39,77 @@ export const categoryNomineeList = (gameSlug) => {
   }
   switch (gameSlug) {
     case linkslist[0]:
-      return ['bg3', 'tunic', 'showgun', 'ghost', 'tlou2', 'dave', 'ratchet'];
-    case linkslist[1]:
       return [
-        'stray',
-        'talos',
-        'ghost',
-        'dave',
-        'tlou2',
-        'tothemoon',
-        'beginnersguide',
-        'bg3',
+        'hifi',
+        'hogwartslegacy',
+        'chainedechoes',
+        'goldenidol',
+        'blasphemous2',
+        'mariorabbids',
+        'neonwhite',
       ];
+    case linkslist[1]:
+      return ['hifi', 'chainedechoes', 'goldenidol', 'bramble'];
     case linkslist[2]:
       return [
-        'bg3',
-        'cocoon',
-        'balatro',
-        'tunic',
-        'stray',
-        'ghost',
-        'ratchet',
-        'tlou2',
-        'seaofstars',
-        'animalwell',
-        'dave',
+        'gorogoa',
+        'hifi',
+        'hogwartslegacy',
+        'blasphemous2',
+        'bramble',
+        'neonwhite',
+        'lostinrandom',
       ];
     case linkslist[3]:
-      return ['bg3', 'tunic', 'showgun', 'ghost', 'dave', 'ratchet', 'balatro'];
+      return [
+        'hifi',
+        'hogwartslegacy',
+        'blasphemous2',
+        'neonwhite',
+        'lostinrandom',
+      ];
     case linkslist[4]:
-      return ['tlou2', 'tothemoon', 'beginnersguide', 'ghost', 'stray'];
+      return [
+        'hifi',
+        'hogwartslegacy',
+        'chainedechoes',
+        'goldenidol',
+        'bramble',
+      ];
     case linkslist[5]:
-      return ['bg3', 'talos', 'stray', 'tlou2', 'tothemoon', 'beginnersguide'];
+      return ['gorogoa', 'hifi', 'bramble', 'neonwhite'];
     case linkslist[6]:
-      return ['tunic', 'ghost', 'ratchet'];
+      return ['gorogoa', 'hifi', 'hogwartslegacy', 'blasphemous2', 'neonwhite'];
     case linkslist[7]:
-      return ['tunic', 'cocoon', 'dave', 'tlou2'];
+      return ['hogwartslegacy', 'bramble', 'lostinrandom'];
     case linkslist[8]:
-      return ['bg3', 'showgun', 'ratchet', 'seaofstars', 'sliceanddice'];
+      return [
+        'hogwartslegacy',
+        'chainedechoes',
+        'mariorabbids',
+        'tacticsogre',
+        'lostinrandom',
+      ];
     case linkslist[9]:
       return [
-        'bg3',
-        'sliceanddice',
-        'cocoon',
-        'tunic',
-        'showgun',
-        'seaofstars',
-        'balatro',
-        'animalwell',
+        'gorogoa',
+        'chainedechoes',
+        'goldenidol',
+        'mariorabbids',
+        'tacticsogre',
       ];
     case linkslist[10]:
-      return [
-        'cocoon',
-        'goldenidol',
-        'showgun',
-        'talos',
-        'sliceanddice',
-        'stray',
-        'dave',
-        'tothemoon',
-        'seaofstars',
-        'balatro',
-        'animalwell',
-        'beginnersguide',
-      ];
+      return ['gorogoa', 'chainedechoes', 'goldenidol', 'bramble', 'neonwhite'];
     case linkslist[11]:
-      return ['nier', 'tunic', 'tlou2', 'seaofstars'];
+      return ['hifi', 'chainedechoes', 'bramble', 'mariorabbids', 'neonwhite'];
     case linkslist[12]:
-      return ['bg3', 'tunic', 'ghost', 'stray', 'dave', 'tlou2'];
+      return [
+        'hifi',
+        'hogwartslegacy',
+        'chainedechoes',
+        'goldenidol',
+        'bramble',
+      ];
     default:
       return [];
   }
@@ -127,14 +123,16 @@ export const getGameDetails = (categorySlug: string) => {
         // videourl: 'https://www.youtube.com/embed/h4w-YxhxxkY',
         description: `Recognizing a game that delivers the absolute best experience across all creative and technical fields.`,
         winner: {
-          title: 'Baldur’s Gate 3',
-          shorttitle: 'bg3',
+          title: 'Chained Echoes',
+          shorttitle: 'chainedechoes',
           description: `
-            What can I say that hasn't been said online already. <br/>  
-             This game embraces the DnD world and rules and show you the best videogame DnD inspired that has ever been created. I'd say it's Divinity original Sin on steroids. <br/> 
-             I'll just say a few good things about the game, the rest you can look online. <br/><br/>
-             1. Monks work well without armor, so you can have your monk with the weenie out all the time. <br/>2. Barbarians work well without armor, so you can have your Barbarian with the weenie out all the time. 
-             <br/>3. Druids in forms don't show any armor, so it's like having the weenie out all the time (for the Lillacorp furries lovers). <br/>4. You can fuck with so many of the characters. <br/>5. You can be poliamorous. <br/>6. Tentacles. `,
+           This is a must play for whoever is a fan of the old style jrpg. <br/>
+           I got initially pushed back by the "rpgmaker" feel of the characters, but the interface and movements are fluid and new, nothing clunky nor boring. What really shines for this game is how they brought a lot of quality of life improvements that old jrpg suffered, like grinding or speed of animations p.e.<br/>
+           The crafting system is something i could critique, but the music and THE STORY, THE FUCKING STORY just make me shut up and advice this game like if it was a masterpiece. I loved the pixel art, and the writing. <br/><br/>
+           The combat gameplay is challanging but not frustrating. It's not like you fight tons of random mobs that you beat by smashing X, it's more like every fight needs attention a little bit of resource management, and they give the right amount of encounters.
+           <br/><br/>
+           Tens across the board
+           `,
         },
       };
     case linkslist[1]:
@@ -144,11 +142,19 @@ export const getGameDetails = (categorySlug: string) => {
         description:
           'For outstanding stoprerytelling and narrative development in a game.',
         winner: {
-          title: "The Beginner's Guide",
-          shorttitle: 'beginnersguide',
-          description: `This game talks about creativity, passions, hobbies, the pursue of one's happiness and human behavior. <br/>
-            It could be a ted talk, or a video on youtube, but the fact that talks about videogames makes the choice of storytell this as a videogame the best choice. <br/>
-            It is bittersweet, hearthwarming and disappointing, lovely and infuriating. It's a game about people more than a game about videogames. <br/>It's short but tells you enough to be considered complete. A must play story-driven walking simulator that inspires you and makes you think.`,
+          title: 'The Case of the Golden Idol',
+          shorttitle: 'goldenidol',
+          description: `<br/>
+            I really want to like point and click games, but I always feel lost in the huge environments and options they provide to solve the mysteries. <br/><br/>
+            Also I'm not a huge reader. <br/><br/>
+  
+  The Case of the Golden Idol caught my attention from the first chapter since it was a one-screen scenario where you could guess what happened without going around for hours asking all the people about their daily lives. <br/>
+  
+  Moving onto the next chapters you can find up to 4 screens and things might become a little difficult, but not overwhelming.<br/>
+   I'm sad I couldn't understand properly one riddle of the 11th (last) chapter, but for the most part my not-so-smart brain could go through all the cases and it was so satisfying! <br/><br/>
+  
+  Also, music is not something I would put on my spotify list, but it's a loop music and never got me frustrated so a 10 for this.
+  `,
         },
       };
     case linkslist[2]:
@@ -158,13 +164,16 @@ export const getGameDetails = (categorySlug: string) => {
         description:
           'For outstanding creative and/or technical achievement in artistic design and animation.',
         winner: {
-          title: 'Sea of Stars',
-          shorttitle: 'seaofstars',
-          description: `Such a great great pixel art old stile jrpg game. 
-            <br/>The art was the most attractive part for me of this game and what led me to try it. Then the music kicks in and you fall in love with all the art department. 
-            <br/>It is super cozy since you feel like playing one of those old jrpg from the 00's. The gameplay is entertaining and engaging, but unfortunately the repetitive mechanics tend to feel like a chore in the later part of the game. 
-            <br/>The story is kind of cool but with some flaws too, villains being villains and heroes being heroes. <br/>
-            It is not a perfect game, but if you relax and try to enjoy this 28ish hours game with no expectations you'll have a great time kicking some butts with an incredible OST and great pixel art.`,
+          title: 'Blasphemous 2',
+          shorttitle: 'blasphemous2',
+          description: `
+           Giving this to blasphemous while having hi-fi rush there... hurts, but I have a soft spot for pixel art. <br/><br/>
+           It's a dark souls game but in 2d and very platformey. <br/>
+           The art is what sells the game most for me, like in the first game.<br/>
+            There are so many good concepts and designs and they're so well executed with this fantastic pixel art style. The music is incredibly fitting too. <br/>
+            It has backtracking (mostly if you want to get all colletcibles), but it is not too tiresome. Enemies are somewhat too easy to defeat except for some difficulty spike, but what are very enjoyable are the boss fights and the platform parts. <br/>
+           You can unlock also some upgrades that make your life easier (teleports etc.) that might have been added sooner, but I guess it's part of the difficulty of the game. 
+          `,
         },
       };
     case linkslist[3]:
@@ -174,12 +183,20 @@ export const getGameDetails = (categorySlug: string) => {
         description:
           'Recognizing a game that stands out for playability, enjoyability of its gameplay and have-a-good-time-ity.',
         winner: {
-          title: 'Dave the Diver',
-          shorttitle: 'dave',
-          description: `This game is a mix of everything. <br/><br/>
-            Its delightful 2D pixel art brings you a vibrant and joyful sea environment that comes along with wonderful cutscenes animations, which you don't usually see in pixel art games. <br/>
-            The game is supposedly about fishing fish and serving sushi, but it's much more. The more you progress the more you realize that it's filled with minigames, easter eggs from nerd culture, exploration and a whole lot of content. <br/>
-            It's the kind of game you can easily go in blind and have tons of fun. Rating: 5 stars.`,
+          title: 'Neon White',
+          shorttitle: 'neonwhite',
+          description: ` 
+          The game is a shot of adrenaline and dopamine all the way during the levels. <br/><br/>
+          It's like pistol whip meets attack on titans. <br/><br/>
+          It's really nice that you can restart the level immediatly without any loading and keep the movement going. <br/>
+          It's one of the most entertaining games I've played. I am not a speedrunner but I imagine that this is the wet dream game of any speedrunner
+<br/><br/>
+On the other hand...
+<br/><br/>
+The art, drawings, color palette and music are nice and fit well with the game. <br/>
+The writing is.. something. The main story is dubbed at least, and luckily they let you fast forward it in case you're like me that has somewhat low patience with cringe writing. <br/>
+I couldn't bear the story so at the end I decided to skip it and enjoy the best part of the game which is the gameplay
+          `,
         },
       };
     case linkslist[4]:
@@ -189,20 +206,16 @@ export const getGameDetails = (categorySlug: string) => {
         description:
           'For bringing an emotional and immersive story, carefully written with quality and outstanding content. ',
         winner: {
-          title: 'The Last of us 2 Remastered',
-          shorttitle: 'tlou2',
+          title: 'Chained Echoes',
+          shorttitle: 'chainedechoes',
           description: `
-          I'll be hones, I was about to give this prize to to the moon, but this description fits perfectly with TLOU2. I have another prize for to the mooon :).<br/><br/>
-The game follows the same gameplay pattern as the first one: exploration, stealth, cinematic. Rinse and repeat. It might seem boring (and it would be) if it wasn't for the masterfully crafted world. <br/>
-This game is the most realistic game I've played so far in terms of graphics, thus transforming what would be a boring exploration phase into a stunning walking simulator.<br/>
- The stealth sections I'm sure are very enjoyable, but I dislike stealth games and I get scared too easily, so I played the game on EXTRA easy mode. I appreciate that the developers gave the chance to enjoy the incredibly well told story also to those who can't properly play the game like me.<br/>
-The zombies and tension are very horrorlike sometimes, but it's also spaced with sections where the enemies are humans. The gem of the game is obviously the storytelling, which makes you feel like you're playing a literal movie. <br/>
-Someone might not like some of the choices of the story, but it's undeniable the quality behind the characters development, the events, the emotions that wrap the story. 
-
-<br/><br/>
-PS: Now i understand why the review bombing and the backlash. Please. Spoiler alert. 
-There are female characters that are the main characters. There are lesbians who might not be the male-fantasy kind of lesbians. There is a woman that is muscular which means that... i don't know what incels feel when they see a muscular woman. There's a transgender person. A lot of LGBTQ+ and women visibility that isn't forced in the story aggressively and a lot of incels out there got angry about it. pff
-          `,
+             This is a must play for whoever is a fan of the old style jrpg. <br/>
+             I got initially pushed back by the "rpgmaker" feel of the characters, but the interface and movements are fluid and new, nothing clunky nor boring. What really shines for this game is how they brought a lot of quality of life improvements that old jrpg suffered, like grinding or speed of animations p.e.<br/>
+             The crafting system is something i could critique, but the music and THE STORY, THE FUCKING STORY just make me shut up and advice this game like if it was a masterpiece. I loved the pixel art, and the writing. <br/><br/>
+             The combat gameplay is challanging but not frustrating. It's not like you fight tons of random mobs that you beat by smashing X, it's more like every fight needs attention a little bit of resource management, and they give the right amount of encounters.
+             <br/><br/>
+             Tens across the board
+             `,
         },
       };
     case linkslist[5]:
@@ -212,14 +225,11 @@ There are female characters that are the main characters. There are lesbians who
         description:
           'For a thought-provoking game that can have a pro-social meaning or message or that just leaves you with jaw dropping moments.',
         winner: {
-          title: 'Just a To the Moon Series Beach Episode',
-          shorttitle: 'tothemoon',
-          description: `Just like what I would say about to the moon I'd say about this game. The gameplay is just exploring in a RPGMaker-like environment basically, with a really nice story and good old music. Enough said. If you liked to the moon you'd most probably like this one too.
-<br/><br/>
-          For me or those who dont care about spoilers:
-          After weeks I still think about it. I still think about
-          <br/><br/>
-          "During the trip, I saw something I liked at the store. I dreamed that you saw that I wanted it, and got it for me.... That you bought it in secret and hung it on my door to surprise me. You would do that, right...? "`,
+          title: 'Goorogoa',
+          shorttitle: 'gorogoa',
+          description: `
+          Such nice artwork and ideas. I've been stuck sometimes in the puzzles since I'm not the brightest, and honestly the game pushes you to do try random stuff to go ahead.<br/> Still, it's awesome. It has a storyline I didn't get but it doesn't matter to me, the 1 - 2 hours game is still a joy for the eyes to play.
+          `,
         },
       };
     case linkslist[6]:
@@ -229,11 +239,20 @@ There are female characters that are the main characters. There are lesbians who
         description:
           'For the best game in the action genre focused primarily on combat.',
         winner: {
-          title: 'Ratchet & Clank: Rift Apart',
-          shorttitle: 'ratchet',
-          description: `I wasn't so keen on playing this game since I felt it to be... childish? But all the good reviews led me to try it, and I'm glad I did. <br/>
-            I ate this game with a lot of excitement and fun. The game CAN be for a younger audience also, but it doesn't mean it isn't fun. Lots of weapons and ways to defeat your many enemies.<br/>
-             The graphics are stunning and the environments diverse and vibrant. The game doesn't drag you around with stupid boring quests (unless you want it to) and feels really fresh, fast  joyful and fun! `,
+          title: 'Neon White',
+          shorttitle: 'neonwhite',
+          description: ` 
+            The game is a shot of adrenaline and dopamine all the way during the levels. <br/><br/>
+            It's like pistol whip meets attack on titans. <br/><br/>
+            It's really nice that you can restart the level immediatly without any loading and keep the movement going. <br/>
+            It's one of the most entertaining games I've played. I am not a speedrunner but I imagine that this is the wet dream game of any speedrunner
+  <br/><br/>
+  On the other hand...
+  <br/><br/>
+  The art, drawings, color palette and music are nice and fit well with the game. <br/>
+  The writing is.. something. The main story is dubbed at least, and luckily they let you fast forward it in case you're like me that has somewhat low patience with cringe writing. <br/>
+  I couldn't bear the story so at the end I decided to skip it and enjoy the best part of the game which is the gameplay
+            `,
         },
       };
     case linkslist[7]:
@@ -243,12 +262,18 @@ There are female characters that are the main characters. There are lesbians who
         description:
           'For the best action/adventure game, combining combat with traversal puzzle solving.',
         winner: {
-          title: 'Tunic',
-          shorttitle: 'tunic',
-          description: ` Remember that feeling when you had your new PS1 videogame bought at the only local videogame store? <br/>How excited you were since it was something new and you knew you'd spend a lot of time on it. <br/>And remember how it was in english, manual included? <br/>Y
-          ou were so happy to play the game but you struggled a lot with understanding what to do, what the story was, what they were saying... <br/>
-          Oh wait! Maybe that thing was meant to do this!... <br/>And you got stuck, a lot, but you were happy anyways, even thought you had no internet to move on, no guides... just yourself and your patience.<br/><br/>
-          That 90's feeling is what Tunic is about. Also a cute fox and a couple of dark souls-like difficult spike. Oh and the music, such a characteristic style that doesn't overwhelm the game and takes you by the hand during the whole game`,
+          title: 'Hogwarts Legacy',
+          shorttitle: 'hogwartslegacy',
+          description: `
+          The game is like my teenage dream of a videogame about the harry potter world come true. <br/> 
+          I wish I played this game when I was super hyped many years ago, because it uses all the references that you can think about and presents them to you throughout your adventure effortlessy. <br/>
+          You see fantastic animals, you see enchantments and spells, you see magical items and places that you already saw in the movie or read on the books. <br/><br/>
+          The gameplay is super smooth and well constructed, you can run around the castle or fly on a broomstick exploring the, somewhat repetitive sometimes, open world. <br/>
+          You fight the enemies with your favorite spells and solve different puzzles with the correct spells that you learned at school. Also trans inclusivity in the game so that the TERF can go *** herself. <br/><br/>
+          The story is okay, nothing extraordinary but how it is presented is just delightful, all the places you see and the buildings you explore have an amount of detail that is incredible.
+<br/><br/>
+The walls of the castle have so many illustrations and details that show the effort to make this world 100% believable and real. 
+          `,
         },
       };
     case linkslist[8]:
@@ -258,14 +283,16 @@ There are female characters that are the main characters. There are lesbians who
         description:
           'Recognizing a game that delivers the absolute best experience across all creative and technical fields.',
         winner: {
-          title: 'Baldur’s Gate 3',
-          shorttitle: 'bg3',
+          title: 'Chained Echoes',
+          shorttitle: 'chainedechoes',
           description: `
-              What can I say that hasn't been said online already. <br/>  
-               This game embraces the DnD world and rules and show you the best videogame DnD inspired that has ever been created. I'd say it's Divinity original Sin on steroids. <br/> 
-               I'll just say a few good things about the game, the rest you can look online. <br/><br/>
-               1. Monks work well without armor, so you can have your monk with the weenie out all the time. <br/>2. Barbarians work well without armor, so you can have your Barbarian with the weenie out all the time. 
-               <br/>3. Druids in forms don't show any armor, so it's like having the weenie out all the time (for the Lillacorp furries lovers). <br/>4. You can fuck with so many of the characters. <br/>5. You can be poliamorous. <br/>6. Tentacles. `,
+             This is a must play for whoever is a fan of the old style jrpg. <br/>
+             I got initially pushed back by the "rpgmaker" feel of the characters, but the interface and movements are fluid and new, nothing clunky nor boring. What really shines for this game is how they brought a lot of quality of life improvements that old jrpg suffered, like grinding or speed of animations p.e.<br/>
+             The crafting system is something i could critique, but the music and THE STORY, THE FUCKING STORY just make me shut up and advice this game like if it was a masterpiece. I loved the pixel art, and the writing. <br/><br/>
+             The combat gameplay is challanging but not frustrating. It's not like you fight tons of random mobs that you beat by smashing X, it's more like every fight needs attention a little bit of resource management, and they give the right amount of encounters.
+             <br/><br/>
+             Tens across the board
+             `,
         },
       };
     case linkslist[9]:
@@ -275,19 +302,14 @@ There are female characters that are the main characters. There are lesbians who
         description:
           'Best game focused on real time or turn-based simulation or strategy/puzzles gameplay.',
         winner: {
-          title: 'Showgun Showdown',
-          shorttitle: 'showgun',
-          description: `It is smart, fast and addicting. It's challenging since it forces you to think ahead, but not too overwhelming since you only have to think ahead 1 or 2 moves and the battle field is pretty small. <br/>
-          The first run you can complete in a few hours (or less!) but then the difficulty rises in a mostly healthy way. Over the 6 days I could beat 5 of them and it was challenging! A little too much towards the end (for me), but that's when you decide you can call it a day and move on.<br/>
-
-Really loved the variety of weapons, almost all of them really viable in some builds.<br/><br/>
-
-Super worth it!<br/><br/>
-TIP FOR THE DEVS: pls make visible the bosses life, sometimes it's hard to know if you can lasthit :(
-<br/><br/>
-EDIT: I could beat the sixth day! I found myself coming to play again and again during lunchtimes since you can pause it whenever you want. I really liked the difficulty rise, the 6th day is a level where you have to know all the enemies and know how to fight with your own build admitting very few mistakes, sometimes the bosses must be done with 0 mistakes. Suuuuper worth the buy! <3
-<br/><br/>
-POST RELEASE EDIT: I'm impressed on how good this game was. After release they put a day 7 with higher difficulty and at the beginning for me it was impossible to even go through the first half. But it's here when you know that a roguelike game is good: I could beat day 7. The more I thought over the cards/shops the better I became. I made less mistakes. It is not random that the last 2 runs that I did were all through the last boss. Awesome strategic game, go for it 100% sure that you'll like a perfectly crafted challange!`,
+          title: 'Mario + Rabbids: Sparks of Hope',
+          shorttitle: 'mariorabbids',
+          description: `After more than 20 hours of gameplay spread throughout one year I did it. <br/> <br/>
+          It's a turn based tile strategy games, much like a FFT but with a very modern gameplay.  <br/>
+          You have a lot of characters to pick for your battles and even if you might consider some more useful than others, or maybe some character might serve the same purpose than other characters in battle, they give you a lot of variety for the battles to come.  <br/> <br/>
+          Every character have different special abilities and talent trees that can upgrade some stats or move. Also you can equip different abilities thanks to the little spark that you find around the world. The story isn't noticeable, like every other mario games, but the music, the art and the mood for the whole game is outstanding.  <br/> <br/>
+          The story is filled with some small puzzles that get you to the boss fights. If you're into sidequesting there are a lot of optional battles and puzzles that you can do. A really piece of art for the strategy games lovers.
+          `,
         },
       };
     case linkslist[10]:
@@ -297,12 +319,18 @@ POST RELEASE EDIT: I'm impressed on how good this game was. After release they p
         // videourl: 'https://www.youtube.com/embed/dCyn_PTDXJI',
         winner: {
           title: 'Stray',
-          shorttitle: 'stray',
-          description: `Hop on and join the ride through this half-lifey post apocalyptic work on the back of a cute adorable wonderful cat. <br/>
-          It's basically a walking simulator, slow paced but interesting to explore since you feel there's a story behind every thing you see. <br/>
-          Walking around as a cat is what makes this game magic though, you scratch sofas, sleep on pillows, meow... just for the sake of it. It's delightful. <br/>
-          The animations of the cat are very realistic which makes you feel like meowing to every robot you encounter. And the story might be simple but it's really touching.
-          <br/><br/> If wall-e and a cat had a videogame it would be Stray.`,
+          shorttitle: 'goldenidol',
+          description: `<br/>
+          I really want to like point and click games, but I always feel lost in the huge environments and options they provide to solve the mysteries. <br/><br/>
+          Also I'm not a huge reader. <br/><br/>
+
+The Case of the Golden Idol caught my attention from the first chapter since it was a one-screen scenario where you could guess what happened without going around for hours asking all the people about their daily lives. <br/>
+
+Moving onto the next chapters you can find up to 4 screens and things might become a little difficult, but not overwhelming.<br/>
+ I'm sad I couldn't understand properly one riddle of the 11th (last) chapter, but for the most part my not-so-smart brain could go through all the cases and it was so satisfying! <br/><br/>
+
+Also, music is not something I would put on my spotify list, but it's a loop music and never got me frustrated so a 10 for this.
+`,
         },
       };
     case linkslist[11]:
@@ -312,21 +340,17 @@ POST RELEASE EDIT: I'm impressed on how good this game was. After release they p
         description:
           'For outstanding music, inclusive of score, original song and/or licensed soundtrack.',
         winner: {
-          title: 'Nier: Automata',
-          shorttitle: 'nier',
-          description: `I must admit, I added Nier only to win this category. I'll break down all the cons of this awful game: 
-This is perhaps the game that has respected my time as a player the least, ever. The game forces you to do three damn 7-hour runs, where the first and second are 95% IDENTICAL. Remember when you have to go to the refugee camp, which sends you to Pascal, then Pascal sends you back to the refugees, and then from the refugees you have to return to Pascal? Get ready to do it again. Running, because you still haven’t unlocked fast travel. I can imagine the developers thinking, “They’re going to have so much fun running from point A to point B for 15 minutes back and forth.”
-<br/>
-Speaking of running from point A to point B, 50% of the game is just that. The world is massive in scale but completely empty, so you end up running through vast open fields… and that’s it. Sure, it gives you the impression of being in a huge area, but it gets tiring, especially when you’re running back and forth through the same damn locations for the third playthrough. And it’s not like these environments are rich with details; we’re literally talking about a desert and some ruins. The only interesting area is the amusement park, but having to redo it multiple times isn’t something I ever wanted to do.
-<br/><br/>
-Since I’m in full rant mode: what the hell is the point of the items? Did you use them? I’m talking about the consumables that give you a buff for, like, 15 seconds. The quick menu isn’t usable in battle because the fights are too fast-paced; you use it for health potions and nothing else. And pausing the game to go into the specific menu to use a consumable every 15 seconds seems ridiculous—it breaks the combat rhythm and feels clunky and not user-friendly. Maybe I just didn’t understand how to use the consumables?
-<br/><br/>
-Last night I logged back in and had to RE-do a part of act three that made me curse from the moment it started until the very end. Of course, it was another “go from point A to point B,” but this time you were forced to walk while robots attack you, and you can’t fight back. Basically, 10 minutes of “hope you don’t die, because if you do, you’ll have to do it all over again. I hope you bought more than 80 health potions” (minor gameplay spoiler). And why did I have to redo it? Because when I played it before, I finished that part and started the next one, but I couldn’t save, so I had to do it again. This choice of forcing specific save points and not letting you save when you want—or having autosave—feels like another huge lack of respect for the player’s time. I remember the first part of the game, where you start in the spaceship and finish by defeating the boss in the factory—I had to redo that at least three times because I kept dying at the boss… and holy f**ing hell.*
-<br/><br/>
-The game has so much potential; the combat is fun, and the gameplay is layered, not just Souls-like fights but also arcade-style elements, and I love the idea. But if I spend the whole game thinking of every curse word imaginable, I end up not enjoying the experience. And especially not enjoying the story, which everyone says is one of the best ever created in a video game—but you only understand it after finishing the third playthrough, for f**’s sake.*
-. 
-<br/><br/>
-Having said this, the game's music is a masterpiece.`,
+          title: 'Hi-Fi RUSH',
+          shorttitle: 'hifi',
+          description: `
+            The game is such a breath of fresh air in the videogame market. <br/>
+            A colorful anime-like action rythm video game that sparks humor joy and fun everytime you play it.<br/>
+             The combat is fun and is quite forgiving, to the point that sometimes it feels just like smashing buttons on rythm, but that's part of the fun. <br/><br/>
+             The story is ok but the dialogs are hilarious and funny. And you have a cat on your side all the time, so points to that. <br/>
+             <br/>
+             It's 8-10 hours long and it's just the right amount of time, since it might become a little too repetitive, so i'm glad for it. Art is a 10.
+  
+            `,
         },
       };
     case linkslist[12]:
@@ -335,14 +359,26 @@ Having said this, the game's music is a masterpiece.`,
         description: 'For a game that brought you on a special journey.',
         // videourl: 'https://www.youtube.com/embed/tQqckYVc5Ls',
         winner: {
-          title: 'Baldur’s Gate 3',
-          shorttitle: 'bg3',
+          title: 'Bramble: The Mountain King',
+          shorttitle: 'bramble',
           description: `
-            What can I say that hasn't been said online already. <br/>  
-             This game embraces the DnD world and rules and show you the best videogame DnD inspired that has ever been created. I'd say it's Divinity original Sin on steroids. <br/> 
-             I'll just say a few good things about the game, the rest you can look online. <br/><br/>
-             1. Monks work well without armor, so you can have your monk with the weenie out all the time. <br/>2. Barbarians work well without armor, so you can have your Barbarian with the weenie out all the time. 
-             <br/>3. Druids in forms don't show any armor, so it's like having the weenie out all the time (for the Lillacorp furries lovers). <br/>4. You can fuck with so many of the characters. <br/>5. You can be poliamorous. <br/>6. Tentacles. `,
+            Incredible atmosphere, clunky  gameplay <br/> <br/>
+
+I have a positive opinion about this game, but I'm sad that I must admit that I also found many flaws gameplay-wise. <br/> <br/>
+
+The game thrives on the atmosphere it provides. It's one of those games that stands up mostly for the art department, since the graphics, the characters modelings, the lights and the level design is incredible.  <br/>
+There's a huge contrast between "kids' fairytale" atmosphere and content and "Nordic folklore inspired horror gore".  <br/>
+ The music goes well with the environment thus creating an incredible atmosphere. 
+What is really dull is the gameplay: puzzles so easy that aren't puzzles, clunky jumps/holds, slow movement/interactions. disappointing aim with controller. Jumping off a cliff and landing on the edge of a rock just to watch your kid fall down and die was really frustrating. Also the writing could have been a little more inspired, idk maybe rhymed or more poetic. 
+ <br/> <br/>
+Still, with some patience you can still enjoy this visual masterpiece, not perfect but really good!
+ <br/> <br/>
+--- > 
+ <br/> <br/>
+I wasn't thinking to put this game in the lillaredux, but after almost two months I keep coming back to it and think of how impactful were some parts of it. This could be Little Nightmare: Nordic fables.  <br/>
+It has the same vibes of LN, you're an innocent kid that has to face a lot of atrocities and gruesome monstrosities from the nordic folklore. The contrast here in this game is even more pushed, bringing up very distinct emotions that make this game unforgettable. <br/>
+ Yes, it could be more fluid in the gameplay or the screenplay be a little more developed, but listening to Blomstertid after you escape from your worst nightmare is something so powerful and unique that brings this game here.
+`,
         },
       };
     default:
@@ -361,133 +397,76 @@ Having said this, the game's music is a masterpiece.`,
 
 export const getGameData = (gameName) => {
   switch (gameName) {
-    case 'bg3':
+    case 'gorogoa':
       return {
-        image: '/assets/bg3.png',
-        name: 'Baldur’s Gate 3',
+        image: '/assets/gorogoa.png',
+        name: 'Gorogoa',
         styles: '',
-        shortName: 'bg3',
+        shortName: 'gorogoa',
       };
-    case 'cocoon':
+    case 'hifi':
       return {
-        image: '/assets/cocoon.png',
-        name: 'Cocoon',
+        image: '/assets/hifi.png',
+        name: 'Hi-Fi RUSH',
         styles: '',
-        shortName: 'cocoon',
+        shortName: 'hifi',
       };
     case 'goldenidol':
       return {
         image: '/assets/goldenidol.png',
-        name: 'The Case of the Golden Idol: DLCs',
+        name: 'The Case of the Golden Idol',
         styles: '',
         shortName: 'goldenidol',
       };
-    case 'sliceanddice':
+    case 'blasphemous2':
       return {
-        image: '/assets/sliceanddice.png',
-        name: 'Slice and Dice',
+        image: '/assets/blasphemous2.png',
+        name: 'Blasphemous 2',
         styles: '',
-        shortName: 'sliceanddice',
+        shortName: 'blasphemous2',
       };
-    case 'talos':
+    case 'bramble':
       return {
-        image: '/assets/talos.png',
-        name: 'The Talos Principle',
+        image: '/assets/bramble.png',
+        name: 'Bramble: The Mountain King',
         styles: '',
-        shortName: 'talos',
+        shortName: 'bramble',
       };
-    case 'tunic':
+    case 'mariorabbids':
       return {
-        image: '/assets/tunic.png',
-        name: 'Tunic',
+        image: '/assets/mariorabbids.png',
+        name: 'Mario + Rabbids: Sparks of Hope',
         styles: '',
-        shortName: 'tunic',
+        shortName: 'mariorabbids',
       };
-    case 'showgun':
+    case 'neonwhite':
       return {
-        image: '/assets/showgun.png',
-        name: 'Showdown Shogun',
+        image: '/assets/neonwhite.png',
+        name: 'Neon White',
         styles: '',
-        shortName: 'showgun',
+        shortName: 'neonwhite',
       };
-    case 'stray':
+    case 'tacticsogre':
       return {
-        image: '/assets/stray.png',
-        name: 'Stray',
+        image: '/assets/tacticsogre.png',
+        name: 'Tactics Ogre: Reborn',
         styles: '',
-        shortName: 'stray',
+        shortName: 'tacticsogre',
       };
-    case 'ghost':
+    case 'lostinrandom':
       return {
-        image: '/assets/ghost.png',
-        name: 'Ghost of tsushima',
+        image: '/assets/lostinrandom.png',
+        name: 'Lost in Random',
         styles: '',
-        shortName: 'ghost',
+        shortName: 'lostinrandom',
       };
-    case 'dave':
+    case 'chainedechoes':
       return {
-        image: '/assets/dave.png',
-        name: 'Dave the Diver',
+        image: '/assets/chainedechoes.png',
+        name: 'Chained Echoes',
         styles: '',
-        shortName: 'dave',
+        shortName: 'chainedechoes',
       };
-    case 'ratchet':
-      return {
-        image: '/assets/ratchet.png',
-        name: 'Ratchet & Clank: Rift Apart',
-        styles: '',
-        shortName: 'ratchet',
-      };
-    case 'tlou2':
-      return {
-        image: '/assets/tlou2.png',
-        name: 'The Last of Us 2 Remastered',
-        styles: '',
-        shortName: 'tlou2',
-      };
-    case 'tothemoon':
-      return {
-        image: '/assets/tothemoon.png',
-        name: 'Just a To the Moon Series Beach Episode',
-        styles: '',
-        shortName: 'tothemoon',
-      };
-    case 'seaofstars':
-      return {
-        image: '/assets/seaofstars.png',
-        name: 'Sea of stars',
-        styles: '',
-        shortName: 'seaofstars',
-      };
-    case 'balatro':
-      return {
-        image: '/assets/balatro.png',
-        name: 'Balatro',
-        styles: '',
-        shortName: 'balatro',
-      };
-    case 'animalwell':
-      return {
-        image: '/assets/animalwell.png',
-        name: 'Animal Well',
-        styles: '',
-        shortName: 'animalwell',
-      };
-    case 'beginnersguide':
-      return {
-        image: '/assets/beginnersguide.png',
-        name: "The Beginner's Guide",
-        styles: '',
-        shortName: 'beginnersguide',
-      };
-    case 'nier':
-      return {
-        image: '/assets/nier.png',
-        name: 'Nier: Automata',
-        styles: '',
-        shortName: 'nier',
-      };
-
     default:
       return {
         image: '/assets/alice.jpg',
