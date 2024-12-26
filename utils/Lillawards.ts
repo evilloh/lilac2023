@@ -467,6 +467,13 @@ export const getGameData = (gameName) => {
         styles: '',
         shortName: 'chainedechoes',
       };
+    case 'hogwartslegacy':
+      return {
+        image: '/assets/hogwartslegacy.png',
+        name: 'Hogwarts Legacy',
+        styles: '',
+        shortName: 'hogwartslegacy',
+      };
     default:
       return {
         image: '/assets/alice.jpg',
